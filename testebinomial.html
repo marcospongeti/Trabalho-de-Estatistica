@@ -11,26 +11,44 @@
             } else if (x == 0) {
                 return 1
             } else {
-                return x * fatorial(x - 1);
+                return x * fatorial(x - 1); // exem: 10! 10 * 9 * 8....
             }
         }
 
 
       function calculaDistribuicaoBinomial() {
-            var p = 0.10;
-            var k = 1;
-            var q = 0.90;
+            var p = 0.6;
+            //vetor que separa pelo ponto e virgula 
+            var k = '0;1;2;3;4;5'
+            var re = ";"
+            var vetdek = k.split(re);
+            var q = 0.4;
             var n = 10;
 
-            numero = (fatorial(n) / (fatorial(k) * (fatorial(n - k)))) * Math.pow(p, k) * Math.pow(q, (n - k));
-            
-            
-           return ((numero * 100).toFixed(2) + "%");
+            let soma = 0
+            for (let i in vetdek) {
+                
+                let kk = vetdek[i];
+               
+                numero = (fatorial(n) / (fatorial(kk) * (fatorial(n - kk)))) * Math.pow(p, kk) * Math.pow(q, (n - kk));
+                let calc = (numero * 100);
+                soma += calc;
+
+            }
+
+             return (soma.toFixed(2) + "%");
         }
-   
-         
+        
+       
+
+
+        
          console.log(calculaDistribuicaoBinomial());
-         
+       
+
+        
+
+        
       </script>
    </head>
 
