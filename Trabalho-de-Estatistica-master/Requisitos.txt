@@ -1,0 +1,19 @@
+requisitos funcionais 
+1 deve inserir dados manualmente e por importacao de arquivo csv
+1.1 rnf: o software n vai coletar dados
+1.1.2rnf: o software deve ler esses dados e os separar caso seja numericos ou string e separar em um vetor num ou stg para usar o RF 7
+2 informar se ira pesquisar populacao ou amostra 
+3 populacao (conjunto todo) amostra (parte do conjunto)
+rnf 2.3: geralmente o software usa mais populacao 
+4 o calculo para a amostra deve ser:
+5 deve organizar os dados, separando-os de acordo com as suas quantidades, exemplo: b,c,c,b,a -> a = 1 / b = 2 / c = 2
+3.5 rnf: n deve aparecer pro usuario 
+6 deve perguntar a variavel pesquisada
+4.6 rnf: essa variavel devera ser a primeira lacuna na tabulacao
+7  de acordo com a resposta do RF 1 deve mostrar as opcoes de nominal ou ordinal caso a variavel seja qualitativa ou as opcoes de direta ou continua caso seja quantitativa
+4.7 rnf: na nominal nao ha ordem de apariçao na tabulaçao
+4.7.2 rnf: na ordinal tem ordem e o software deve perguntar qual a ordem o usario quer na tabulacao, aparecendo os dados que ele deseja organizar
+4.7.3 rnf: na quantitativa a ordem é sempre crescente  
+8 
+
+
